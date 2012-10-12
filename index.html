@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <base target="_blank">
+  
+  <meta name="description" content="My rite to life is that I live to write.">
+  
+  <title>molly m. augustin</title>
+  
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://thescoutapp.com/static/extern-libs/bootstrap.css">
+  <style type="text/css">
+    /* this is for css. fonts, styles, visual stuff */
+    /* Text inbetween these symbols doens't do anything. */
+    * {
+      font-family: Arial; /*a very limited set of fonts work on the web.*/
+    }
+    .gold {
+      color: rgb(250, 163, 56);
+    }
+    .red {
+      color: rgb(150, 35, 38);
+    }
+    .blue {
+      color: rgb(33, 147, 150);
+    }
+    .char {
+      color: rgb(64, 64, 64); 
+    }
+    a {
+      text-decoration: none;
+      color: rgb(33, 147, 150); /*same as .blue */
+    }
+    a:hover {
+      text-decoration: underline;
+      color: rgb(33, 147, 150);
+    }
+
+    html, body {
+      text-align: center;
+      margin: auto;
+      margin-top: 40px;
+    }
+    @font-face {
+      font-family: "Lobster";
+      src: url("special/LobsterTwo-Regular.otf") format("opentype");
+    }
+    h2 {
+      font-family: "Sansation", sans-serif;
+    }
+    .profile-links img {
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      border-radius: 16px;
+      width: 46px;
+      height: auto;
+    }
+    .profile-links a {
+      text-decoration: none !important;
+    }
+    .stuff {
+      font-family: "Lobster";
+    }
+    #resumeImg {
+      height: 0px;
+      width: auto;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      transition: all 0.4s;
+      position: relative;
+      left: -31px;
+    }
+    #tagline {
+      margin-bottom: 0px;
+    }
+    
+    #playBtn {
+      margin-top: 70px;
+      opacity: 0.5;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    #playBtn:hover {
+      opacity: 1;
+    }
+
+  </style>
+</head>
+<body>
+  <img id="name-wordmark" src="images/name%20wordmark.png" alt="name-wordmark" width="700" height="204" />
+  <br>
+   
+  <div class="profile-links" style="margin-top: 78px;">
+    <a href="/resume.html">
+      <img src="images/resumeM.png" id="resume" />
+    </a>
+	<a href="http://www.behance.net/molly-m-augustin">
+      <img src="images/behance.png"  id="portfolio" />
+	</a> 
+	<a href="http://www.linkedin.com/in/mollymarie6">
+      <img src="images/linked.in-icon.png"  id="linked-in"/>
+	</a>  
+	<a href="https://twitter.com/#!/goodgollymolly6">
+      <img src="images/twitter.png" id="twitter"/>
+    </a>	
+	<a href="http://goodgolly-itsmolly.blogspot.com/">
+      <img src="images/blogger-icon.png" id="blog"/>
+    </a>
+	<a href="http://www.last.fm/user/mollymarie6">
+      <img src="images/last.fm-icon.png" id="lastfm"/>
+    </a>
+	<a href="pages/doodlePad.html">
+      <img src="images/doodle-icon.png" id="doodlePad"/>
+	</a> 
+  </div>
+  
+  <br>
+  
+  <i style="color:rgb(65, 65, 65); font-size: 22px; font-family: 'Lobster';">My rite to life is that I live to write.</i>  
+  <br>
+  <div>
+    <img id="resumeImg" src="images/Resume2.png">
+  </div>
+  
+  <a href="pages/prezi.html" style="text-decoration: none !important;">
+    <img id="playBtn" src="images/play.png" />
+  </a>
+  
+  <br>
+
+   
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+  <script type="text/javascript">
+    var shown = false;
+    $(document.getElementById('resume')).on('click', function(){
+      if (shown) {
+        document.getElementById('resumeImg').setAttribute('style', 'height: 0px;');
+        shown = false;
+      } else {
+        document.getElementById('resumeImg').setAttribute('style', 'height: auto;');
+        shown = true;
+      }
+      return false;
+    });
+    
+    var _gaq=[['_setAccount','UA-30429855-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+  <script type="text/javascript" src="js/tooltips.js"></script>
+  <script type="text/javascript">
+    $('#twitter').tooltip({
+      title: 'twitter',
+      trigger: 'hover'
+    });
+    $('#portfolio').tooltip({
+      title: 'portfolio',
+      trigger: 'hover'
+    });
+    $('#doodlePad').tooltip({
+      title: 'doodlePad',
+      trigger: 'hover'
+    });
+    $('#resume').tooltip({
+      title: 'resume',
+      trigger: 'hover'
+    });
+    $('#linked-in').tooltip({
+      title: 'linkedIn',
+      trigger: 'hover'
+    });
+    $('#lastfm').tooltip({
+      title: 'music stream',
+      trigger: 'hover'
+    });
+    $('#blog').tooltip({
+      title: 'blog',
+      trigger: 'hover'
+    });
+	
+	//below are the part1, part2, part3 tooltips
+	$('#part1').tooltip({
+      title: 'prezi', 
+      trigger: 'hover'
+    });
+	$('#part2').tooltip({
+      title: 'a post',
+	  placement: 'left',
+      trigger: 'hover'
+    });
+	$('#part3').tooltip({
+      title: 'vlog',
+	  placement: 'right', 
+      trigger: 'hover'
+    });
+    
+    
+    var play = document.getElementById('playBtn');
+    play.on('click', function(){
+      
+    });
+  </script>
+<!--
+  <span>
+    
+  </span>
+  <script type="text/javascript">
+    var prerenderOnhover = function(){
+      
+    };
+    var preLoadLinks = function preLoadLinks(){
+      return '<link rel="dns-prefetch" href="' + url + '"><link rel="prerender" href="' + url + '">';
+    };
+    $(window).on('load', function(){
+      prerenderOnhover();
+      startPrerendering();
+      var span = document.createElement('span');
+      document.body.appendChild(span);
+    })
+  </script>
+-->
+</body>
+</html>

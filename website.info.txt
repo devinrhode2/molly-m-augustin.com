@@ -1,0 +1,9 @@
+mollymarie6
+Swordfish6
+IP Address: 199.188.200.4
+CPANEL LOGIN INFORMATION:
+Username: wthosl 
+Password: pruthebrichathideltutroev 
+URL: http://molly-m-augustin.com/cpanel 
+
+If DNS is still propagating, you can access cPanel athttp://199.188.200.4/cpanel
