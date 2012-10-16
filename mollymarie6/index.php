@@ -1,0 +1,1 @@
+<?php header("Location: http://molly-m-augustin.com/"); ?>
